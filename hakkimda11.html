@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaan | Geliştirici</title>
+
+  <!-- Google Fontlar -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Quicksand', sans-serif;
+      scroll-behavior: smooth;
+      /* Anime karakter arka planı */
+      background: url('https://wallpapercave.com/wp/wp7080156.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Arka plan koyu ton ile kaplama (okunabilirlik için) */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 30, 0.8);
+      padding: 15px 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    header {
+      padding: 140px 20px 80px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-family: 'Orbitron', sans-serif;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-top: 15px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 0 0 8px #000;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      color: #ffd700;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 30px;
+      text-shadow: 0 0 8px #ffcc00;
+    }
+
+    section p, section ul {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #ddd;
+      text-shadow: 0 0 4px #000;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 15px 0;
+    }
+
+    footer {
+      padding: 30px;
+      background: rgba(0, 0, 30, 0.8);
+      color: #aaa;
+      font-size: 0.9em;
+      text-shadow: 0 0 3px #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+      }
+
+      section h2 {
+        font-size: 1.6em;
+      }
+
+      section p, section ul {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#teknolojiler">Teknolojiler</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <header>
+    <h1>Merhaba, ben Kaan ˚ʚ♡ɞ˚</h1>
+    <p>Yazılım geliştiricisi, teknoloji tutkunu ve sürekli öğrenmeye açık biriyim.</p>
+  </header>
+
+  <section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>
+      Yazılım dünyasına küçük yaşlarda başladım. Önce Python ile temel programlama öğrendim, ardından HTML, CSS ve JavaScript ile web geliştirmeye başladım. Öğrenmeyi ve üretmeyi seviyorum.
+    </p>
+  </section>
+
+  <section id="teknolojiler">
+    <h2>Kullandığım Teknolojiler</h2>
+    <ul>
+      <li>🐍 <strong>Python:</strong> Otomasyon, veri işleme ve küçük uygulamalar için.</li>
+      <li>🌐 <strong>HTML & CSS:</strong> Web siteleri için yapısal ve görsel tasarım.</li>
+      <li>⚡ <strong>JavaScript:</strong> Sayfalara etkileşim kazandırmak için kullanıyorum.</li>
+    </ul>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Aşağıdaki bağlantılar üzerinden bana ulaşabilirsin:</p>
+    <ul>
+      <li>📧 Email: <a href="mailto:kenzyoat5@gmail.com" style="color:#ffd700;">kenzyoat5@gmail.com</a></li>
+      <li>🐙 GitHub: <a href="https://github.com/kullaniciadi" target="_blank" style="color:#ffd700;">github.com/kullaniciadi</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Kaan Yıldız | Tüm Hakları Saklıdır.
+  </footer>
+
+</body>
+</html>
+
